@@ -1,0 +1,25 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "NodeJs course",
+      "author": "Jhon Carter",
+      "topic": "Javascript",
+      "url": "http://faztweb.com/node"
+    },
+    {
+      "id": 2,
+      "title": "Rust course",
+      "author": "Jhon Carter",
+      "topic": "Rust",
+      "url": "http://faztweb.com/rust"
+    },
+    {
+      "id": 3,
+      "title": "Redux course",
+      "author": "Jhon Carter",
+      "topic": "Javascript",
+      "url": "http://faztweb.com/redux"
+    }
+  ]
+}
