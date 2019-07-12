@@ -53,7 +53,7 @@ let updateCourseTopic = ({id, topic}) => {
       return course;
     }
   })
-  return course.filter(course => course.id === id)[0];
+  return courses.filter(course => course.id === id)[0];
 }
 
 const root = {

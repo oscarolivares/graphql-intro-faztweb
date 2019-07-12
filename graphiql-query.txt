@@ -1,0 +1,38 @@
+query getSingleCourse($courseID: Int!) {
+  course(id: $courseID) {
+    title
+    description
+    topic
+  }
+}
+
+query getCourses($courseTopic: String) {
+  courses(topic: $courseTopic) {
+    title
+    description
+    topic
+  }
+}
+
+mutation updateCourseTopic($id: Int!, $topic: String!) {
+  updateCourseTopic(id: $id, topic: $topic) {
+    ...courseFields
+  }
+}
+
+fragment courseFields on Course {
+  title
+  author
+  description
+  topic
+  url
+}
+
+
+// Query Variables
+{
+  "courseID": 1,
+  "courseTopic": "Javascript",
+  "id": 1,
+  "topic": "Node.js"
+}
